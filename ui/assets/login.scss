@@ -1,0 +1,111 @@
+.signup {
+  min-height: 105vh;
+  background-color: $alternate;
+  color: white;
+
+  &__text {
+    text-align: center;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-tab){
+      width: 60%;
+    }
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: inherit;
+  }
+
+  h2 {
+    color: #d6d6d6;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__logo {
+    // height: 180px;
+    width: 180px;
+    margin: 0 auto;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .input {
+    border-color: #B2B2B2;
+    border-radius: 5px;
+    height: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  &__field {
+    margin: 0 auto;
+    padding: 0 2rem;
+    margin-bottom: 1.5rem;
+
+    @media screen and (min-width: $bp-tab){
+      width: 45%;
+    }
+
+    a.forgot {
+      color: $primary;
+      font-style: italic;
+    }
+
+    i.mdi-eye {
+      color: grey;
+    }
+  }
+
+  &__action {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+      padding: 0.6rem 8rem;
+      margin-bottom: 1.5rem;
+
+      @media screen and (min-width: $bp-mob) and (max-width: 500px){
+        padding: 0.6rem 6.5rem;
+      }
+    }
+
+    p {
+      font-size: 0.9rem;
+      text-align: center;
+      color: #d6d6d6;
+      margin-bottom: 1rem;
+      @media screen and (min-width: $bp-tab){
+        width: 40%;
+      }
+    }
+
+    a.link {
+      text-decoration: underline;
+      color: inherit;
+      font-weight: 600;
+    }
+  }
+
+  button {
+    background-color: $primary;
+    border-color: $primary;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    height: auto;
+  }
+
+  button:hover, button:focus {
+    color: white;
+    border-color: $primary;
+    outline: 0;
+  }
+}
