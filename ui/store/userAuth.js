@@ -54,7 +54,6 @@ export const actions = {
       const {
         message, code
       } = await this.$axios.$post('api/v1/login', params);
-      console.log(code);
       if (code === 200) {
         commit('setAuth', true);
         commit('setToken', message.token);
